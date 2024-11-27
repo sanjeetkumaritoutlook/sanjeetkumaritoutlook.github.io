@@ -14,6 +14,6 @@ describe('app-home-page', () => {
     await page.setContent('<app-home-page></app-home-page>');
 
     const element = await page.find('app-home-page >>> button');
-    expect(element.textContent).toEqual('Profile page');
+    expect(element.textContent).toEqual('Profile Page');
   });
 });

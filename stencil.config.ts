@@ -6,18 +6,19 @@ export const config: Config = {
   globalStyle: 'src/global/app.css',
   globalScript: 'src/global/app.ts',
   taskQueue: 'async',
-  // namespace: 'myapp',
+  namespace: 'myapp',
   outputTargets: [
     {
-      type: 'www',
+      type: 'dist', // For reusable components,Required for `defineCustomElements`
+      esmLoaderPath: '../loader',
+    },
+    {
+      type: 'www',  // Optional, for a local development server
       // comment the following line to disable service workers in production
       serviceWorker: null,
-    baseUrl: 'https://myapp.local/',
+   // baseUrl: 'https://myapp.local/',
     // baseUrl:'/build/',  like in fluid it opens to localhost:3333/fluid/
     },
-    // {
-    //   type: 'dist', // For reusable components
-    //   esmLoaderPath: '../loader',
-    // },
+    
   ],
 };

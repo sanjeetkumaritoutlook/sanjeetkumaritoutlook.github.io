@@ -1,10 +1,10 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { AppHeader } from '../posts-dashboard';
+import { PostsDashboard } from '../posts-dashboard';
 
 describe('posts-dashboard', () => {
   it('renders', async () => {
     const page = await newSpecPage({
-      components: [AppHeader],
+      components: [PostsDashboard],
       html: `<posts-dashboard></posts-dashboard>`,
     });
     expect(page.root).toEqualHtml(`

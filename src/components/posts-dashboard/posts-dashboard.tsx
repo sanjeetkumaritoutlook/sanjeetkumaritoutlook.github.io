@@ -5,7 +5,7 @@ import { Component,State, h } from '@stencil/core';
   styleUrl: 'posts-dashboard.css',
   shadow: true,
 })
-export class AppHeader {
+export class PostsDashboard {
   @State() posts: Array<{ id: number; title: string; body: string }> = [];
   // Fetch posts data when the component loads- sample API
   async componentWillLoad() {

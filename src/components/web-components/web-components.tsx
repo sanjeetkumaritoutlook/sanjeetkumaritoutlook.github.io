@@ -1,5 +1,6 @@
 import { Component, h } from '@stencil/core';
 import { defineCustomElements } from 'stenciljs-components/loader';
+
 @Component({
   tag: 'web-components',
   styleUrl: 'web-components.css',
@@ -21,8 +22,18 @@ export class WebComponents {
 
   // Example: Initialize a library
   private initializeLibrary() {
-   // Initialize the custom elements
-    defineCustomElements();
+   // Wrap the function to log the registration
+   const defineWithLog = (win: any) => {
+  defineCustomElements(win);
+  
+    console.log('Registered Custom Elements:');
+  ['my-card', 'my-rich-text-editor'].forEach((tagName) => {
+    console.log(`${tagName}:`, customElements.get(tagName));
+  });
+};
+
+   // Use the modified version
+    defineWithLog(window);
   }
   render() {
     return (
