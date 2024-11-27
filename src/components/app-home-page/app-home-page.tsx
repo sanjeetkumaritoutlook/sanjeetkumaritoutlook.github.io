@@ -15,10 +15,18 @@ export class AppHome {
           <a href="https://stenciljs.com">stenciljs.com</a> to get started.
         </p>
         <div>
-        <h1>Pages</h1>
-        <a href="/web-components">StencilJS componennts</a><br/>
-        <a href="/posts-dashboard">Posts dashboard</a>
+        <h1>Pages</h1>      
         </div>
+        <button
+          onClick={() => Router.push('/web-components')}
+        >
+          StencilJS componennts
+        </button>
+        <button
+          onClick={() => Router.push('/posts-dashboard')}
+        >
+         Posts dashboard
+        </button>
         <button
           onClick={() => Router.push('/profile/sanjeet')}
         >

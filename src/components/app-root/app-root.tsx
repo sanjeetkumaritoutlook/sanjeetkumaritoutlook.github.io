@@ -26,11 +26,13 @@ export class AppRoot {
               <app-home-page />
             </Route>
 
-            <Route path={/^\/posts-dashboard/}>
+            <Route 
+             path={/^\/posts-dashboard/}>
             <posts-dashboard></posts-dashboard>
             </Route> 
 
-            <Route path={/^\/web-components/}>
+            <Route
+             path={/^\/web-components/   }>
             <web-components></web-components>
             </Route> 
 
