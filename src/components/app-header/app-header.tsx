@@ -17,7 +17,7 @@ export class AppHeader {
     return (
       <div>
       <header>
-        <h1>Sanjeet Stencil App</h1>
+        <h1>Sanjeet Stencil Web App</h1>
       </header>
       {/* <div>
         {this.data.map(item => (
