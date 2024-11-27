@@ -10,9 +10,9 @@ export class HeaderNavigation {
     return (
       <header>
       <nav>
-        <router-link href="/profile/stencil" class="nav-link" activeClass="active">Profile</router-link>
-        <router-link href="/about" class="nav-link" activeClass="active">StencilJS components</router-link>
-        <router-link href="/posts-dashboard" class="nav-link" activeClass="active">Posts Dashboard</router-link>
+        <a href="/profile/stencil" class="nav-link" >Profile</a>
+        <a href="/web-components" class="nav-link" >StencilJS components</a>
+        <a href="/posts-dashboard" class="nav-link">Posts Dashboard</a>
       </nav>
     </header>
     );
