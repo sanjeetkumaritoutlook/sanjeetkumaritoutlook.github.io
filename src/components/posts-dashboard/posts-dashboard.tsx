@@ -1,13 +1,13 @@
 import { Component,State, h } from '@stencil/core';
 
 @Component({
-  tag: 'app-header',
-  styleUrl: 'app-header.css',
+  tag: 'posts-dashboard',
+  styleUrl: 'posts-dashboard.css',
   shadow: true,
 })
 export class AppHeader {
   @State() posts: Array<{ id: number; title: string; body: string }> = [];
-  // Fetch posts data when the component loads
+  // Fetch posts data when the component loads- sample API
   async componentWillLoad() {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await response.json();
@@ -17,7 +17,7 @@ export class AppHeader {
     return (
       <div>
       <header>
-        <h1>Sanjeet Stencil App</h1>
+        <h1>Sanjeet Stencil Web App</h1>
       </header>
       {/* <div>
         {this.data.map(item => (
