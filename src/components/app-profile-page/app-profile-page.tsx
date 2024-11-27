@@ -46,6 +46,7 @@ export class AppProfile {
               width: this.width,
               height: this.height,
             }}
+            loading="lazy"
         />
           <p>Hello! My name is {this.normalize(this.name)}. My name was passed in through a route param!</p>
         </div>
