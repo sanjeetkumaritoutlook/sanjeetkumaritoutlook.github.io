@@ -20,7 +20,7 @@ export class AppHome {
         <a href="/posts-dashboard">Posts dashboard</a>
         </div>
         <button
-          onClick={() => Router.push('/profile/stencil')}
+          onClick={() => Router.push('/profile/sanjeet')}
         >
           Profile Page
         </button>

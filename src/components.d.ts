@@ -9,7 +9,19 @@ export namespace Components {
     interface AppHomePage {
     }
     interface AppProfilePage {
+        /**
+          * Alternate text for the image
+         */
+        "alt": string;
+        /**
+          * Image height (e.g., "100px" or "auto")
+         */
+        "height": string;
         "name": string;
+        /**
+          * Image width (e.g., "200px" or "100%")
+         */
+        "width": string;
     }
     interface AppRoot {
     }
@@ -70,7 +82,19 @@ declare namespace LocalJSX {
     interface AppHomePage {
     }
     interface AppProfilePage {
+        /**
+          * Alternate text for the image
+         */
+        "alt"?: string;
+        /**
+          * Image height (e.g., "100px" or "auto")
+         */
+        "height"?: string;
         "name"?: string;
+        /**
+          * Image width (e.g., "200px" or "100%")
+         */
+        "width"?: string;
     }
     interface AppRoot {
     }
