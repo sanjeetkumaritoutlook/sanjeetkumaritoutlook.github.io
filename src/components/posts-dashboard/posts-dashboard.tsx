@@ -1,8 +1,8 @@
 import { Component,State, h } from '@stencil/core';
 
 @Component({
-  tag: 'app-header',
-  styleUrl: 'app-header.css',
+  tag: 'posts-dashboard',
+  styleUrl: 'posts-dashboard.css',
   shadow: true,
 })
 export class AppHeader {

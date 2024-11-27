@@ -27,7 +27,7 @@ export class AppRoot {
             </Route>
 
             <Route path={/^\/posts-dashboard/}>
-            <app-header></app-header>
+            <posts-dashboard></posts-dashboard>
             </Route> 
 
             <Route path={/^\/web-components/}>

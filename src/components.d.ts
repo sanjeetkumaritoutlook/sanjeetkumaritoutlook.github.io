@@ -6,8 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface AppHeader {
-    }
     interface AppHomePage {
     }
     interface AppProfilePage {
@@ -17,16 +15,12 @@ export namespace Components {
     }
     interface HeaderNavigation {
     }
+    interface PostsDashboard {
+    }
     interface WebComponents {
     }
 }
 declare global {
-    interface HTMLAppHeaderElement extends Components.AppHeader, HTMLStencilElement {
-    }
-    var HTMLAppHeaderElement: {
-        prototype: HTMLAppHeaderElement;
-        new (): HTMLAppHeaderElement;
-    };
     interface HTMLAppHomePageElement extends Components.AppHomePage, HTMLStencilElement {
     }
     var HTMLAppHomePageElement: {
@@ -51,6 +45,12 @@ declare global {
         prototype: HTMLHeaderNavigationElement;
         new (): HTMLHeaderNavigationElement;
     };
+    interface HTMLPostsDashboardElement extends Components.PostsDashboard, HTMLStencilElement {
+    }
+    var HTMLPostsDashboardElement: {
+        prototype: HTMLPostsDashboardElement;
+        new (): HTMLPostsDashboardElement;
+    };
     interface HTMLWebComponentsElement extends Components.WebComponents, HTMLStencilElement {
     }
     var HTMLWebComponentsElement: {
@@ -58,17 +58,15 @@ declare global {
         new (): HTMLWebComponentsElement;
     };
     interface HTMLElementTagNameMap {
-        "app-header": HTMLAppHeaderElement;
         "app-home-page": HTMLAppHomePageElement;
         "app-profile-page": HTMLAppProfilePageElement;
         "app-root": HTMLAppRootElement;
         "header-navigation": HTMLHeaderNavigationElement;
+        "posts-dashboard": HTMLPostsDashboardElement;
         "web-components": HTMLWebComponentsElement;
     }
 }
 declare namespace LocalJSX {
-    interface AppHeader {
-    }
     interface AppHomePage {
     }
     interface AppProfilePage {
@@ -78,14 +76,16 @@ declare namespace LocalJSX {
     }
     interface HeaderNavigation {
     }
+    interface PostsDashboard {
+    }
     interface WebComponents {
     }
     interface IntrinsicElements {
-        "app-header": AppHeader;
         "app-home-page": AppHomePage;
         "app-profile-page": AppProfilePage;
         "app-root": AppRoot;
         "header-navigation": HeaderNavigation;
+        "posts-dashboard": PostsDashboard;
         "web-components": WebComponents;
     }
 }
@@ -93,11 +93,11 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "app-header": LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
             "app-home-page": LocalJSX.AppHomePage & JSXBase.HTMLAttributes<HTMLAppHomePageElement>;
             "app-profile-page": LocalJSX.AppProfilePage & JSXBase.HTMLAttributes<HTMLAppProfilePageElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "header-navigation": LocalJSX.HeaderNavigation & JSXBase.HTMLAttributes<HTMLHeaderNavigationElement>;
+            "posts-dashboard": LocalJSX.PostsDashboard & JSXBase.HTMLAttributes<HTMLPostsDashboardElement>;
             "web-components": LocalJSX.WebComponents & JSXBase.HTMLAttributes<HTMLWebComponentsElement>;
         }
     }
