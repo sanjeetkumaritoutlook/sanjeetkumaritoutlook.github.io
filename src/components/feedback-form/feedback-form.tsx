@@ -302,7 +302,16 @@ export class FeedbackForm {
    }
    @State() editorContent: string = '';
   @State() responseMessage: string = '';
-   
+  @State() userName: string = ''; // State to capture user's name
+  @State() userEmail: string = ''; // State to capture user's email
+  handleInputChange(event: Event, field: 'name' | 'email') {
+    const input = event.target as HTMLInputElement;
+    if (field === 'name') {
+      this.userName = input.value;
+    } else if (field === 'email') {
+      this.userEmail = input.value;
+    }
+  }
    //Before performing any operations- GET or SET- ensure that the this.editor instance is available
   //send email also without backend
    async getContentFromEditor() {
@@ -331,13 +340,21 @@ export class FeedbackForm {
         this.responseMessage = 'Submission failed!';
       }
 
+       // Ensure all required fields are filled
+    if (!this.userName || !this.userEmail || !this.editorContent) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
        // Call EmailJS to send the email (Browser based or client based)
        //Emailjs dashboard: https://dashboard.emailjs.com/sign-up
        //templateParams is this.editorContent
+       //Template ID not found: https://dashboard.emailjs.com/admin/templates
     emailjs.send(
       'service_2q5gm3h', // Email service ID from EmailJS dashboard
-      'template_rf0n5eq', // Template ID from EmailJS dashboard
-      { content: this.editorContent }, // Template parameters (the content of the email)
+      'template_szeawas', // Template ID from EmailJS dashboard
+      { user_name: this.userName,
+        user_email: this.userEmail,
+        content: this.editorContent }, // Template parameters (the content of the email)
       {
         publicKey: 'IRGsyXDXq7ZJHMbzF',
       }// Your user ID from EmailJS: YOUR_PUBLIC_KEY
@@ -379,6 +396,23 @@ export class FeedbackForm {
     return (
       <div>
       <h1>Feedback Form</h1>
+      <label>
+          Name:
+          <input
+            type="text"
+            placeholder="Enter your name"
+            onInput={(event) => this.handleInputChange(event, 'name')}
+          required/>
+        </label>
+        <br />
+        <label>
+          Email:
+          <input
+            type="email"
+            placeholder="Enter your email"
+            onInput={(event) => this.handleInputChange(event, 'email')}
+            required/>
+        </label>
       <div 
       id={editorId}
       ref={(el: HTMLElement) => (this._targetRef = el)}

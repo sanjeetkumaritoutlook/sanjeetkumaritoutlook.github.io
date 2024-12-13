@@ -58,12 +58,12 @@ export class AppProfile {
           </tr>
           <tr>
             <td>stenciljs-components</td>
-            <td>https://www.npmjs.com/package/stenciljs-components</td>
+            <td><a href="https://www.npmjs.com/package/stenciljs-components" target="_blank">Visit</a></td>
             <td>1.0.7</td>
           </tr>
           <tr>
             <td>FLUID Library</td>
-            <td>https://www.npmjs.com/package/fluid-library</td>
+            <td><a href="https://www.npmjs.com/package/fluid-library" target="_blank">Visit</a></td>
             <td>1.0.4</td>
           </tr>
           </table>
@@ -75,7 +75,7 @@ export class AppProfile {
           </tr>
           <tr>
             <td>AWS</td>
-            <td>https://www.credly.com/users/sanjeet-kumar.8f5d5b31</td>
+            <td><a href="https://www.credly.com/users/sanjeet-kumar.8f5d5b31" target="_blank">Visit</a></td>
           </tr>
          
           </table>
