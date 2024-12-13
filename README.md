@@ -21,6 +21,11 @@ and run:
 ```bash
 npm start
 ```
+To generate new component, run:
+
+```bash
+npm run generate
+```
 
 To build the app for production, run:
 

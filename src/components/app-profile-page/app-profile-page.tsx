@@ -59,7 +59,7 @@ export class AppProfile {
           <tr>
             <td>stenciljs-components</td>
             <td><a href="https://www.npmjs.com/package/stenciljs-components" target="_blank">Visit</a></td>
-            <td>1.0.7</td>
+            <td>1.0.8</td>
           </tr>
           <tr>
             <td>FLUID Library</td>
