@@ -15,7 +15,7 @@ export class AppRoot {
       <div>
         <header>
             <h1 onClick={() => Router.push("/")}>
-              Stencil App Starter
+              Home
             </h1>
             <header-navigation></header-navigation>
         </header>

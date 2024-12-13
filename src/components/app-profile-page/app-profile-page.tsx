@@ -103,6 +103,11 @@ export class AppProfile {
           <td>React 18.2</td>
           </tr>
           <tr>
+          <td>ionic-web-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/ionic-web-app/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
+          <tr>
           <td>angular-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
