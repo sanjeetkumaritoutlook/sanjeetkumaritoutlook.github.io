@@ -80,6 +80,25 @@ export class AppProfile {
          
           </table>
 
+          <p>My other Projects:</p>
+          <table>
+          <tr>
+            <th>Github Pages</th>
+            <th>URL</th>
+            <th>Technology</th>
+          </tr>
+          <tr>
+          <td>stenciljs-components</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/stenciljs-components/" target="_blank">Visit</a></td>
+          <td>StencilJS</td>
+          </tr>
+          <tr>
+          <td>consuming-angular-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/consuming-angular-app/" target="_blank">Visit</a></td>
+          <td>Angular</td>
+          </tr>
+          </table>
+
         </div>
       );
     }

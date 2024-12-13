@@ -362,7 +362,27 @@ export class FeedbackForm {
     .then((response) => {
       console.log('Email sent successfully',  response.status, response.text);
       alert('Email sent successfully!');
-    })
+   
+      // Sending auto-reply email
+      emailjs
+      .send(
+        'service_2q5gm3h', // Your EmailJS service ID
+        'template_57gcu0o', // Auto-reply template ID
+        {
+          user_name: this.userName,
+          user_email: this.userEmail,
+        },
+        'IRGsyXDXq7ZJHMbzF' // Your EmailJS user ID
+      )
+      .then((response) => {
+        console.log('Auto-reply email sent successfully', response);
+        alert('Feedback sent, and an auto-reply email was sent to the user!');
+      })
+      .catch((error) => {
+        console.error('Error sending auto-reply email', error);
+      });
+
+    })  //this is first feedback then endinng parantheses, auto-reply is placed inside this  above
     .catch((error) => {
       console.error('Error sending email', error);
       alert('Failed to send email');
