@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AboutUs {
+    }
     interface AppHomePage {
     }
     interface AppProfilePage {
@@ -48,6 +50,12 @@ export interface FeedbackFormCustomEvent<T> extends CustomEvent<T> {
     target: HTMLFeedbackFormElement;
 }
 declare global {
+    interface HTMLAboutUsElement extends Components.AboutUs, HTMLStencilElement {
+    }
+    var HTMLAboutUsElement: {
+        prototype: HTMLAboutUsElement;
+        new (): HTMLAboutUsElement;
+    };
     interface HTMLAppHomePageElement extends Components.AppHomePage, HTMLStencilElement {
     }
     var HTMLAppHomePageElement: {
@@ -105,6 +113,7 @@ declare global {
         new (): HTMLWebComponentsElement;
     };
     interface HTMLElementTagNameMap {
+        "about-us": HTMLAboutUsElement;
         "app-home-page": HTMLAppHomePageElement;
         "app-profile-page": HTMLAppProfilePageElement;
         "app-root": HTMLAppRootElement;
@@ -115,6 +124,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AboutUs {
+    }
     interface AppHomePage {
     }
     interface AppProfilePage {
@@ -156,6 +167,7 @@ declare namespace LocalJSX {
     interface WebComponents {
     }
     interface IntrinsicElements {
+        "about-us": AboutUs;
         "app-home-page": AppHomePage;
         "app-profile-page": AppProfilePage;
         "app-root": AppRoot;
@@ -169,6 +181,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "about-us": LocalJSX.AboutUs & JSXBase.HTMLAttributes<HTMLAboutUsElement>;
             "app-home-page": LocalJSX.AppHomePage & JSXBase.HTMLAttributes<HTMLAppHomePageElement>;
             "app-profile-page": LocalJSX.AppProfilePage & JSXBase.HTMLAttributes<HTMLAppProfilePageElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;

@@ -1,4 +1,8 @@
 import { Component, h, Listen,Prop, Event, EventEmitter ,Watch,Element,State} from '@stencil/core';
+//https://www.npmjs.com/package/@emailjs/browser
+import emailjs from '@emailjs/browser';
+//no backend server required: https://www.emailjs.com/docs/user-guide/connecting-email-services/
+//earlier deprecated one: https://www.npmjs.com/package/emailjs-com
 import tinymce from 'tinymce/tinymce';    //simply import 'tinymce' doesnt work
 import 'tinymce/models/dom/model';
 
@@ -300,6 +304,7 @@ export class FeedbackForm {
   @State() responseMessage: string = '';
    
    //Before performing any operations- GET or SET- ensure that the this.editor instance is available
+  //send email also without backend
    async getContentFromEditor() {
      if (this.editor) {
        // Access properties or methods of the TinyMCE editor instance
@@ -325,6 +330,26 @@ export class FeedbackForm {
         console.error('Error:', error);
         this.responseMessage = 'Submission failed!';
       }
+
+       // Call EmailJS to send the email (Browser based or client based)
+       //Emailjs dashboard: https://dashboard.emailjs.com/sign-up
+       //templateParams is this.editorContent
+    emailjs.send(
+      'service_2q5gm3h', // Email service ID from EmailJS dashboard
+      'template_rf0n5eq', // Template ID from EmailJS dashboard
+      { content: this.editorContent }, // Template parameters (the content of the email)
+      {
+        publicKey: 'IRGsyXDXq7ZJHMbzF',
+      }// Your user ID from EmailJS: YOUR_PUBLIC_KEY
+    )
+    .then((response) => {
+      console.log('Email sent successfully',  response.status, response.text);
+      alert('Email sent successfully!');
+    })
+    .catch((error) => {
+      console.error('Error sending email', error);
+      alert('Failed to send email');
+    });
      } else {
        console.error('TinyMCE editor instance not available.');
        return null;

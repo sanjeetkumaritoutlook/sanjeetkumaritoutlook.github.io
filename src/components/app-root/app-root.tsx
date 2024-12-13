@@ -40,6 +40,10 @@ export class AppRoot {
             <feedback-form></feedback-form>
             </Route> 
             <Route
+             path={/^\/about-us/   }>
+            <about-us></about-us>
+            </Route> 
+            <Route
               path={match("/profile/:name")}
               render={({ name }) => <app-profile-page name={name} />}
             />

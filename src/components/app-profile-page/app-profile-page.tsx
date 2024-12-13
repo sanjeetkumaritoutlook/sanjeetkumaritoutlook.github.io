@@ -49,6 +49,37 @@ export class AppProfile {
             loading="lazy"
         />
           <p>Hello! My name is {this.normalize(this.name)}. My name was passed in through a route param!</p>
+        <p>Created two npm packages:</p>
+                <table>
+          <tr>
+            <th>NPM Package Name</th>
+            <th>URL</th>
+            <th>Version</th>
+          </tr>
+          <tr>
+            <td>stenciljs-components</td>
+            <td>https://www.npmjs.com/package/stenciljs-components</td>
+            <td>1.0.7</td>
+          </tr>
+          <tr>
+            <td>FLUID Library</td>
+            <td>https://www.npmjs.com/package/fluid-library</td>
+            <td>1.0.4</td>
+          </tr>
+          </table>
+         <p>External Certifications:</p>
+          <table>
+          <tr>
+            <th>Category</th>
+            <th>URL</th>
+          </tr>
+          <tr>
+            <td>AWS</td>
+            <td>https://www.credly.com/users/sanjeet-kumar.8f5d5b31</td>
+          </tr>
+         
+          </table>
+
         </div>
       );
     }
