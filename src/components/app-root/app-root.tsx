@@ -35,7 +35,10 @@ export class AppRoot {
              path={/^\/web-components/   }>
             <web-components></web-components>
             </Route> 
-
+            <Route
+             path={/^\/feedback-form/   }>
+            <feedback-form></feedback-form>
+            </Route> 
             <Route
               path={match("/profile/:name")}
               render={({ name }) => <app-profile-page name={name} />}

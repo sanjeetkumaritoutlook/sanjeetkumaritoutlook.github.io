@@ -25,12 +25,27 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface FeedbackForm {
+        "disableQuickbars": boolean;
+        "disabled": boolean;
+        "fontFamily": string;
+        "fontSize": string;
+        "initialValue": string;
+        /**
+          * Optional placeholder text displayed when the form field is empty.
+         */
+        "placeholder": string;
+    }
     interface HeaderNavigation {
     }
     interface PostsDashboard {
     }
     interface WebComponents {
     }
+}
+export interface FeedbackFormCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLFeedbackFormElement;
 }
 declare global {
     interface HTMLAppHomePageElement extends Components.AppHomePage, HTMLStencilElement {
@@ -50,6 +65,26 @@ declare global {
     var HTMLAppRootElement: {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
+    };
+    interface HTMLFeedbackFormElementEventMap {
+        "valueChange": string;
+        "editorFocus": void;
+        "editorBlur": void;
+        "contentChanged": any;
+    }
+    interface HTMLFeedbackFormElement extends Components.FeedbackForm, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLFeedbackFormElementEventMap>(type: K, listener: (this: HTMLFeedbackFormElement, ev: FeedbackFormCustomEvent<HTMLFeedbackFormElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLFeedbackFormElementEventMap>(type: K, listener: (this: HTMLFeedbackFormElement, ev: FeedbackFormCustomEvent<HTMLFeedbackFormElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
+    }
+    var HTMLFeedbackFormElement: {
+        prototype: HTMLFeedbackFormElement;
+        new (): HTMLFeedbackFormElement;
     };
     interface HTMLHeaderNavigationElement extends Components.HeaderNavigation, HTMLStencilElement {
     }
@@ -73,6 +108,7 @@ declare global {
         "app-home-page": HTMLAppHomePageElement;
         "app-profile-page": HTMLAppProfilePageElement;
         "app-root": HTMLAppRootElement;
+        "feedback-form": HTMLFeedbackFormElement;
         "header-navigation": HTMLHeaderNavigationElement;
         "posts-dashboard": HTMLPostsDashboardElement;
         "web-components": HTMLWebComponentsElement;
@@ -98,6 +134,21 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface FeedbackForm {
+        "disableQuickbars"?: boolean;
+        "disabled"?: boolean;
+        "fontFamily"?: string;
+        "fontSize"?: string;
+        "initialValue"?: string;
+        "onContentChanged"?: (event: FeedbackFormCustomEvent<any>) => void;
+        "onEditorBlur"?: (event: FeedbackFormCustomEvent<void>) => void;
+        "onEditorFocus"?: (event: FeedbackFormCustomEvent<void>) => void;
+        "onValueChange"?: (event: FeedbackFormCustomEvent<string>) => void;
+        /**
+          * Optional placeholder text displayed when the form field is empty.
+         */
+        "placeholder"?: string;
+    }
     interface HeaderNavigation {
     }
     interface PostsDashboard {
@@ -108,6 +159,7 @@ declare namespace LocalJSX {
         "app-home-page": AppHomePage;
         "app-profile-page": AppProfilePage;
         "app-root": AppRoot;
+        "feedback-form": FeedbackForm;
         "header-navigation": HeaderNavigation;
         "posts-dashboard": PostsDashboard;
         "web-components": WebComponents;
@@ -120,6 +172,7 @@ declare module "@stencil/core" {
             "app-home-page": LocalJSX.AppHomePage & JSXBase.HTMLAttributes<HTMLAppHomePageElement>;
             "app-profile-page": LocalJSX.AppProfilePage & JSXBase.HTMLAttributes<HTMLAppProfilePageElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "feedback-form": LocalJSX.FeedbackForm & JSXBase.HTMLAttributes<HTMLFeedbackFormElement>;
             "header-navigation": LocalJSX.HeaderNavigation & JSXBase.HTMLAttributes<HTMLHeaderNavigationElement>;
             "posts-dashboard": LocalJSX.PostsDashboard & JSXBase.HTMLAttributes<HTMLPostsDashboardElement>;
             "web-components": LocalJSX.WebComponents & JSXBase.HTMLAttributes<HTMLWebComponentsElement>;

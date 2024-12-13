@@ -24,6 +24,11 @@ export class AppHome {
           Profile Page
         </button>
         <button
+          onClick={() => Router.push('/feedback-form')}
+        >
+          Feedback Form
+        </button>
+        <button
           onClick={() => Router.push('/web-components')}
         >
           StencilJS componennts
