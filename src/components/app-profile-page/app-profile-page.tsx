@@ -90,12 +90,22 @@ export class AppProfile {
           <tr>
           <td>stenciljs-components</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/stenciljs-components/" target="_blank">Visit</a></td>
-          <td>StencilJS</td>
+          <td>StencilJS 4.7</td>
           </tr>
           <tr>
           <td>consuming-angular-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/consuming-angular-app/" target="_blank">Visit</a></td>
-          <td>Angular</td>
+          <td>Angular 16</td>
+          </tr>
+          <tr>
+          <td>react-local-stenciljs</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
+          <td>React 18.2</td>
+          </tr>
+          <tr>
+          <td>angular-local-stenciljs</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
+          <td>Angular 12</td>
           </tr>
           </table>
 
