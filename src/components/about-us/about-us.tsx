@@ -46,6 +46,26 @@ export class AboutUs {
      <p>GitHub Pages will look for an index.html , index.md , or README.md file as the entry file for your site. </p>
      <p>For this convert an existing repo into Github Pages (or) create a new public repository named <b>username.github.io</b>, where username is your username (or organization name) on GitHub.</p>
      <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">Source</a></p>
+     <h1>Multiple Github pages for multiple repositories</h1>
+     <p>In addition to the user/organization site, you can also have project sites for any other repository. The URL for each of these will be in the format https://<b>username</b>.github.io/repository-name.</p><p>
+<ul><li>	You can create as many project repositories as you like and enable GitHub Pages on them individually.</li><li>
+For each repository, you can enable GitHub Pages under the repository's settings, selecting a branch to host the site (typically main or gh-pages).</li></ul>
+<br></br>Example Setup:<br></br>
+1.	Repository 1 (repo1):<br></br>
+<ul><li>	GitHub Pages URL: https://username.github.io/repo1</li><li>
+You can configure this repository to host a website by enabling GitHub Pages in the repository's settings.</li></ul><br></br>
+2.	Repository 2 (repo2):
+<ul><li>GitHub Pages URL: https://username.github.io/repo2</li><li>
+	Similarly, you can enable GitHub Pages on this repository, and it will host a different website.</li></ul><br></br>
+How to set up GitHub Pages for a project repository:<br></br>
+<ol><li>	Go to the repository you want to use for GitHub Pages.</li>
+<li>	In the repository, go to Settings then Pages (located under the "Code and automation" section).</li>
+<li>Select the branch you want to use for the Pages site (usually main or gh-pages).</li>
+<li>Choose the folder (like /root or /docs)  or "GitHub Actions and workflow" whichever if applicable.</li>
+<li>Save the settings, and your site will be live at https://username.github.io/repository-name.</li></ol><br></br>
+This way, you can have multiple repositories, each with its own GitHub Pages site.
+
+</p>
       <h1>GitHub Actions</h1>
       <p>GitHub Actions is required in scenario where entry file of a repository is not at root directory and the repository is of a framework like React, Angular, StencilJS</p>
       <p>GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.</p>
