@@ -59,7 +59,7 @@ export class AppProfile {
           <tr>
             <td>stenciljs-components</td>
             <td><a href="https://www.npmjs.com/package/stenciljs-components" target="_blank">Visit</a></td>
-            <td>1.0.8</td>
+            <td>1.0.13</td>
           </tr>
           <tr>
             <td>FLUID Library</td>
@@ -93,14 +93,14 @@ export class AppProfile {
           <td>StencilJS 4.7</td>
           </tr>
           <tr>
+          <td>angular19-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular19-app/" target="_blank">Visit</a></td>
+          <td>Angular 19</td>
+          </tr>
+          <tr>
           <td>consuming-angular-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/consuming-angular-app/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
-          </tr>
-          <tr>
-          <td>react-local-stenciljs</td>
-           <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
-          <td>React 18.2</td>
           </tr>
           <tr>
           <td>ionic-web-app</td>
@@ -117,13 +117,17 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tinymce-form/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
           </tr>
-          <tr>
+          {/* <tr>
           <td>angular-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
           </tr>
+          <tr>
+          <td>react-local-stenciljs</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
+          <td>React 18.2</td>
+          </tr> */}
           </table>
-
         </div>
       );
     }

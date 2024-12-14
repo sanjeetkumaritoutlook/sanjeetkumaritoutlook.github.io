@@ -342,7 +342,7 @@ export class FeedbackForm {
 
        // Ensure all required fields are filled
     if (!this.userName || !this.userEmail || !this.editorContent) {
-      alert('Please fill out all fields before submitting.');
+      alert('Please fill out first 3 fields before submitting.');
       return;
     }
        // Call EmailJS to send the email (Browser based or client based)
@@ -433,12 +433,16 @@ export class FeedbackForm {
             onInput={(event) => this.handleInputChange(event, 'email')}
             required/>
         </label>
+        <br />
+        <label>
+          Please provide your feedback:
       <div 
       id={editorId}
       ref={(el: HTMLElement) => (this._targetRef = el)}
        innerHTML={this.initialValue}
        aria-disabled={this.disabled}
        aria-placeholder={this.placeholder}></div>
+       </label>
        <fluid-file-upload
        uploadControlConfig="uploadControlConfig"
        fileListUpdated="fileListUpdated($event)"

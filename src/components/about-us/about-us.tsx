@@ -10,6 +10,7 @@ export class AboutUs {
       // Dynamically resolve the path to the image file
    const imagePath1 = new URL('../../assets/images/app-starter1.png', import.meta.url).href;
    const imagePath2 = new URL('../../assets/images/app-starter2.png', import.meta.url).href; 
+   const imagePath3 = new URL('../../assets/images/githubpages1png.png', import.meta.url).href; 
     return (
       <div>
          <div>
@@ -66,6 +67,30 @@ How to set up GitHub Pages for a project repository:<br></br>
 This way, you can have multiple repositories, each with its own GitHub Pages site.
 
 </p>
+<h1>GitHub Pages for a private repository</h1>
+<p>you can use GitHub Pages for a private repository, but there are a few important points to keep in mind:<br></br>
+<br></br>
+
+Key Details:<br></br>
+<strong>GitHub Pages for Private Repositories:</strong><br></br>
+<br></br>
+
+GitHub Pages can be enabled for private repositories if you have a <strong>GitHub Pro, Team, or Enterprise</strong> plan. Free plans support GitHub Pages only for public repositories.<br></br>
+<img 
+            src={imagePath3}
+            style={{
+              width: '100%',
+              height: '250px',
+            }}
+            loading="lazy"
+        />
+<strong>Visibility of the Pages:</strong><br></br>
+
+When using GitHub Pages with a private repository, the website generated can still be publicly accessible. The content hosted on GitHub Pages does not inherit the repository's privacy status, so anyone with the link can access it unless further restrictions are applied (e.g., custom access controls).<br></br>
+<br></br>
+<strong>Restrictions for Private Repositories:</strong>
+<br></br>
+Ensure that sensitive or confidential information is not included in the repository, as it could inadvertently become exposed through the GitHub Pages site.<br></br></p>
       <h1>GitHub Actions</h1>
       <p>GitHub Actions is required in scenario where entry file of a repository is not at root directory and the repository is of a framework like React, Angular, StencilJS</p>
       <p>GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.</p>
