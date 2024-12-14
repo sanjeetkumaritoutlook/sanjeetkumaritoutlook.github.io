@@ -4,7 +4,7 @@ export { Components, JSX } from './components';
 
 export const Router = createRouter();
 import { defineCustomElements } from 'stenciljs-components/loader';
-
+defineCustomElements(window);
 import { fluidEnvironments } from '../fluid';
 const script = document.createElement('script');
 /**
@@ -21,4 +21,3 @@ if ('noModule' in script) {
 //   script.src = fluid.legacy;
 }
 document.head.appendChild(script);
-defineCustomElements(window);
