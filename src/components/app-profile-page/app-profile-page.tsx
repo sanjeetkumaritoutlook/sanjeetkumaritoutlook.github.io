@@ -108,6 +108,16 @@ export class AppProfile {
           <td>Angular 17</td>
           </tr>
           <tr>
+          <td>react-tinymce-form</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/react-tinymce-form/" target="_blank">Visit</a></td>
+          <td>React 18.3</td>
+          </tr>
+          <tr>
+          <td>angular-tinymce-form</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tinymce-form/" target="_blank">Visit</a></td>
+          <td>Angular 12</td>
+          </tr>
+          <tr>
           <td>angular-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
