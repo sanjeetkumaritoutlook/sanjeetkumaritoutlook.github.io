@@ -15,10 +15,12 @@ export const config: Config = {
     {
       type: 'www',  // Optional, for a local development server
       // comment the following line to disable service workers in production
-      serviceWorker: null,
+    //  baseUrl: '/',  //Adjust based on your hosting setup
+    // baseUrl: 'https://sanjeetkumaritoutlook.github.io/',
+      // baseUrl:'/build/',  //like in fluid it opens to localhost:3333/fluid/
    // baseUrl: 'https://myapp.local/',
-    // baseUrl:'/build/',  like in fluid it opens to localhost:3333/fluid/
-   // baseUrl: '/',  Adjust based on your hosting setup
+    // buildDir: 'build', // Ensure this matches the build folder
+      serviceWorker: null,
     },
     
   ],

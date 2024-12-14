@@ -4,7 +4,15 @@ export { Components, JSX } from './components';
 
 export const Router = createRouter();
 import { defineCustomElements } from 'stenciljs-components/loader';
-defineCustomElements(window);
+async function initializeStencilComponents() {
+  console.log('Initializing StencilJS components...');
+  await defineCustomElements(window, {
+    resourcesUrl: './build/', // Adjust based on your deployment structure
+  }); // Pass the global `window` object
+  console.log('StencilJS components initialized.');
+}
+initializeStencilComponents();
+
 import { fluidEnvironments } from '../fluid';
 const script = document.createElement('script');
 /**
