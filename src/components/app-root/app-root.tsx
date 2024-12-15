@@ -3,7 +3,7 @@ import { Component, h } from '@stencil/core';
 import { Router } from "../../";  //in index.ts its already there so no need to again do const Router = createRouter();
 
 import { Route, match } from "stencil-router-v2";
-
+//https://www.npmjs.com/package/stencil-router-v2
 @Component({
   tag: 'app-root',
   styleUrl: 'app-root.css',
