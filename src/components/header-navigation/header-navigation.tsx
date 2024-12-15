@@ -9,7 +9,7 @@ export class HeaderNavigation {
   render() {
     return (
       <header>
-        <h1>Stencil App Starter - by Sanjeet Kumar</h1>
+        <h1>Sanjeet Kumar's Homepage</h1>
     </header>
     );
   }

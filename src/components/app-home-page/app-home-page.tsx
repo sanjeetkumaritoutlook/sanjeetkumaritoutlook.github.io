@@ -11,9 +11,11 @@ export class AppHome {
    return (
       <div class="app-home-page">
         <p>
-          Welcome to Sanjeet Kumar's Home Page. You can use this Stencil App Starter to build entire apps all with web components using Stencil! Check out our docs on{' '}
+          Welcome to Sanjeet Kumar's Home Page.<p>
+          </p> This website is created using Stencil App Starter and hosted on  <a href="https://pages.github.com/">GitHub Pages.</a> You can use  Stencil App Starter to build entire apps all with web components using Stencil! Check out docs on{' '}
           <a href="https://stenciljs.com">stenciljs.com</a> to get started.
         </p>
+        <p><strong>Please Note:</strong> Currently, The routing to different pages is not working perfectly and you can navigate to each page, after clicking it from main Home page only. Direct URLs to each individual page is not working. </p>
         <h1>Pages</h1>
         <button
           onClick={() => Router.push('/profile/sanjeet')}

@@ -64,7 +64,7 @@ export class AppProfile {
           <tr>
             <td>FLUID Library</td>
             <td><a href="https://www.npmjs.com/package/fluid-library" target="_blank">Visit</a></td>
-            <td>1.0.4</td>
+            <td>1.0.5</td>
           </tr>
           </table>
          <p>External Certifications:</p>

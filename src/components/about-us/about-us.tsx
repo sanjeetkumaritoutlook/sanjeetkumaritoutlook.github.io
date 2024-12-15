@@ -47,6 +47,20 @@ export class AboutUs {
      <p>GitHub Pages will look for an index.html , index.md , or README.md file as the entry file for your site. </p>
      <p>For this convert an existing repo into Github Pages (or) create a new public repository named <b>username.github.io</b>, where username is your username (or organization name) on GitHub.</p>
      <p><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">Source</a></p>
+     <h1>GitHub Pages is a free hosting service</h1>
+     <p>GitHub Pages is a free hosting service provided by GitHub, since 2008 and it allows you to publish static websites directly from a GitHub repository. It is particularly popular for personal portfolios, documentation sites, blogs, and small web projects. Here's an overview:</p><br></br>
+    <p>GitHub Pages is widely used for projects like documentation, small apps, or even full-fledged personal portfolios due to its simplicity and seamless integration with GitHub.</p>
+     <strong>Key Features:
+     </strong>
+     <p><strong>Free Hosting: </strong><br></br> GitHub Pages offers free hosting for static websites, with support for custom domains.<br></br>
+     <strong>Version Control: </strong> Websites hosted on GitHub Pages are tied to Git repositories, so every change to your site is versioned.<br></br>
+     <strong>Easy Deployment: </strong> By pushing code to specific branches (e.g., main, gh-pages) of your GitHub repository, GitHub Pages automatically builds and deploys the website.<br></br>
+     <strong>Jekyll Support: </strong> GitHub Pages has built-in support for Jekyll, a static site generator, making it easy to create blogs or documentation sites.<br></br>
+     <strong>HTTPS Support:  </strong>GitHub Pages automatically provides HTTPS for your site, ensuring secure connections.<br></br></p>
+    <p><strong>Limitations:</strong><br></br>
+    <strong>Static Content:</strong> GitHub Pages is for static websites only; it doesn't support server-side code like PHP or databases.<br></br>
+    <strong>Traffic Limits:</strong> There's a soft limit on bandwidth and size, but it is sufficient for most small to medium-sized sites.<br></br>
+    <strong>Customization:</strong> Advanced customization may require integrating build tools or manually configuring settings.<br></br></p>
      <h1>Multiple Github pages for multiple repositories</h1>
      <p>In addition to the user/organization site, you can also have project sites for any other repository. The URL for each of these will be in the format https://<b>username</b>.github.io/repository-name.</p><p>
 <ul><li>	You can create as many project repositories as you like and enable GitHub Pages on them individually.</li><li>
