@@ -113,6 +113,11 @@ export class AppProfile {
           <td>React 18.3</td>
           </tr>
           <tr>
+          <td>vanilla-ts</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/vanilla-ts/" target="_blank">Visit</a></td>
+          <td>Typescript 5.6.2</td>
+          </tr>
+          <tr>
           <td>angular-tinymce-form</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tinymce-form/" target="_blank">Visit</a></td>
           <td>Angular 12</td>

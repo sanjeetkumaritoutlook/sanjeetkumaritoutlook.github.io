@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "stenciljs-components": "^1.0.13",
+    "stenciljs-components": "^2.0.1",
     "tinymce": "^7.6.0"
   }
 }
