@@ -122,6 +122,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tinymce-form/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
           </tr>
+          <tr>
+          <td>nextjs-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/nextjs-app/" target="_blank">Visit</a></td>
+          <td>Next 15.1.1</td>
+          </tr>
           {/* <tr>
           <td>angular-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
