@@ -93,6 +93,16 @@ export class AppProfile {
           <td>StencilJS 4.7</td>
           </tr>
           <tr>
+          <td>e-commerce-angular</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-angular/" target="_blank">Visit</a></td>
+          <td>Angular 19</td>
+          </tr>
+          <tr>
+          <td>e-commerce-react</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-react/" target="_blank">Visit</a></td>
+          <td>React 18</td>
+          </tr>
+          <tr>
           <td>angular19-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular19-app/" target="_blank">Visit</a></td>
           <td>Angular 19</td>
@@ -105,7 +115,7 @@ export class AppProfile {
           <tr>
           <td>ionic-web-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/ionic-web-app/" target="_blank">Visit</a></td>
-          <td>Angular 17</td>
+          <td>Ionic Angular 17</td>
           </tr>
           <tr>
           <td>react-tinymce-form</td>

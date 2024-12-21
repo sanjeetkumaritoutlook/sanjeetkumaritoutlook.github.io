@@ -111,7 +111,10 @@ Ensure that sensitive or confidential information is not included in the reposit
     <p>GitHub Actions goes beyond just DevOps and lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.</p>
     <p>You can configure a GitHub Actions workflow to be triggered when an event occurs in your repository, such as a pull request being opened or an issue being created. Your workflow contains one or more jobs which can run in sequential order or in parallel.</p>
       <p>A workflow is a configurable automated process that will run one or more jobs. Workflows are defined by a YAML file checked in to your repository and will run when triggered by an event in your repository, or they can be triggered manually, or at a defined schedule.</p>
- 
+      <h1>GitHub Pages runs on Ubuntu </h1>
+      <p>GitHub Pages runs on Ubuntu (or more broadly, on a Linux-based environment) because it uses a Linux server infrastructure to host and serve the static content of your repositories.</p>
+      <p>GitHub Pages uses GitHub’s infrastructure, which is built on Linux-based virtual machines or containers (often running on Ubuntu or other Linux distributions). This ensures that static websites generated from GitHub repositories are served efficiently, regardless of the underlying hardware or architecture.</p>
+      <p>GitHub also uses tools like Jekyll (a static site generator) for building pages. Jekyll, along with many other build tools, is developed to work well on Linux-based environments.</p>
       </div>
     );
   }
