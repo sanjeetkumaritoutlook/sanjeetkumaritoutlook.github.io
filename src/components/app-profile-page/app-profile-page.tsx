@@ -135,7 +135,7 @@ export class AppProfile {
           <tr>
           <td>nextjs-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/nextjs-app/" target="_blank">Visit</a></td>
-          <td>Next 15.1.1</td>
+          <td>Next 15.1.1 with React 19</td>
           </tr>
           {/* <tr>
           <td>angular-local-stenciljs</td>
