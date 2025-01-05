@@ -82,11 +82,11 @@ export class FeedbackForm {
       label: 'Clear',
     },
   };
-
+//https://fluid.libertymutual.com/fluid/fluid-file-upload.html
   fileListUpdated(event) {
     console.log(event.detail);
   }
-
+//https://fluid-components.libertymutual.com/fluid/fluid-file-upload.html
   uploadClicked(event) {
     console.log(event.detail);
   }
@@ -304,12 +304,15 @@ export class FeedbackForm {
   @State() responseMessage: string = '';
   @State() userName: string = ''; // State to capture user's name
   @State() userEmail: string = ''; // State to capture user's email
+  @State() fileUploaded: any = ''; // State to capture user's uploaded document
   handleInputChange(event: Event, field: 'name' | 'email') {
     const input = event.target as HTMLInputElement;
     if (field === 'name') {
       this.userName = input.value;
     } else if (field === 'email') {
       this.userEmail = input.value;
+    } else if (field === 'file') {
+      this.fileUploaded = input.value;
     }
   }
    //Before performing any operations- GET or SET- ensure that the this.editor instance is available
@@ -325,7 +328,7 @@ export class FeedbackForm {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({  name: 'user',content: this.editorContent }),
+          body: JSON.stringify({  name: this.userName,email:this.userEmail,file:this.fileUploaded,content: this.editorContent }),
         });
   
         if (!response.ok) {
