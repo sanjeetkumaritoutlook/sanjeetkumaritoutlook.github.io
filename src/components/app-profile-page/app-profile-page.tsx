@@ -108,6 +108,11 @@ export class AppProfile {
           <td>Angular 19</td>
           </tr>
           <tr>
+          <td>angular16-app (Dashboard)</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular16-app/" target="_blank">Visit</a></td>
+          <td>Angular 16</td>
+          </tr>
+          <tr>
           <td>consuming-angular-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/consuming-angular-app/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
@@ -147,6 +152,16 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
           <td>React 18.2</td>
           </tr> */}
+           <tr>
+          <td>new-react-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/new-react-app/" target="_blank">Visit</a></td>
+          <td>React 18</td>
+          </tr>
+          <tr>
+          <td>formarray-forms</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/formarray-forms" target="_blank">Visit</a></td>
+          <td>Angular 16</td>
+          </tr>
           </table>
         </div>
       );
