@@ -162,6 +162,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/formarray-forms" target="_blank">Visit</a></td>
           <td>Angular 16</td>
           </tr>
+          <tr>
+          <td>angular-project</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-project" target="_blank">Visit</a></td>
+          <td>Angular 16</td>
+          </tr>
           </table>
         </div>
       );
