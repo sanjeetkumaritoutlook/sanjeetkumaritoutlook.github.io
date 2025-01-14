@@ -75,7 +75,7 @@ export class AppProfile {
           </tr>
           <tr>
             <td>AWS</td>
-            <td><a href="https://www.credly.com/users/sanjeet-kumar.8f5d5b31" target="_blank">Visit</a></td>
+            <td><a href="https://www.credly.com/users/sanjeet-kumar.8f5d5b31" target="_blank">Visit</a>      <a href="https://credentials.veeva.com/profile/sanjeetkumar205395/wallet" target="_blank">Visit</a></td>
           </tr>
          
           </table>
