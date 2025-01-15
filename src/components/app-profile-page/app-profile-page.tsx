@@ -67,7 +67,7 @@ export class AppProfile {
             <td>1.0.5</td>
           </tr>
           </table>
-         <p>External Certifications:</p>
+         <p>External Certifications/NPM Profile:</p>
           <table>
           <tr>
             <th>Category</th>
@@ -77,7 +77,10 @@ export class AppProfile {
             <td>AWS</td>
             <td><a href="https://www.credly.com/users/sanjeet-kumar.8f5d5b31" target="_blank">Visit</a>      <a href="https://credentials.veeva.com/profile/sanjeetkumar205395/wallet" target="_blank">Visit</a></td>
           </tr>
-         
+          <tr>
+            <td>npm profile</td>
+            <td><a href="https://www.npmjs.com/~sanjeetkumarit" target="_blank">Visit</a></td>
+          </tr>
           </table>
 
           <p>My other Projects:</p>
