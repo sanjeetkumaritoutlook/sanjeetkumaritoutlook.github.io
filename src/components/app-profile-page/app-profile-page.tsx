@@ -116,6 +116,11 @@ export class AppProfile {
           <td>Angular 16</td>
           </tr>
           <tr>
+          <td>Frontend portion(MEAN stack)</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/mean-stack-example/" target="_blank">Visit</a></td>
+          <td>Angular 16</td>
+          </tr>
+          <tr>
           <td>consuming-angular-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/consuming-angular-app/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
