@@ -131,6 +131,11 @@ export class AppProfile {
           <td>Ionic Angular 17</td>
           </tr>
           <tr>
+          <td>react-native-expo</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/reactive-native-expo/" target="_blank">Visit</a></td>
+          <td>Expo for Web (React Native for web)</td>
+          </tr>
+          <tr>
           <td>react-tinymce-form</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-tinymce-form/" target="_blank">Visit</a></td>
           <td>React 18.3</td>
