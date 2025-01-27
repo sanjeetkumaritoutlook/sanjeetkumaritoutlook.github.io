@@ -146,6 +146,11 @@ export class AppProfile {
           <td>Typescript 5.6.2</td>
           </tr>
           <tr>
+          <td>personal-forms</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/personal-forms/" target="_blank">Visit</a></td>
+          <td>Angular 9</td>
+          </tr>
+          <tr>
           <td>angular-tinymce-form</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tinymce-form/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
