@@ -151,6 +151,11 @@ export class AppProfile {
           <td>Angular 9</td>
           </tr>
           <tr>
+          <td>sample-communication-subject</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/sample-communication-subject/" target="_blank">Visit</a></td>
+          <td>Angular 8</td>
+          </tr>
+          <tr>
           <td>angular-tinymce-form</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tinymce-form/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
