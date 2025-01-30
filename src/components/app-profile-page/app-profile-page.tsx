@@ -151,6 +151,11 @@ export class AppProfile {
           <td>Angular 9</td>
           </tr>
           <tr>
+          <td>angular-tour-of-heroes</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-tour-of-heroes" target="_blank">Visit</a></td>
+          <td>Angular 9</td>
+          </tr>
+          <tr>
           <td>sample-communication-subject</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/sample-communication-subject/" target="_blank">Visit</a></td>
           <td>Angular 8</td>
