@@ -195,6 +195,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-project" target="_blank">Visit</a></td>
           <td>Angular 16</td>
           </tr>
+          <tr>
+          <td>angularjs1-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angularjs1-app/" target="_blank">Visit</a></td>
+          <td>AngularJS 1</td>
+          </tr>
           </table>
         </div>
       );
