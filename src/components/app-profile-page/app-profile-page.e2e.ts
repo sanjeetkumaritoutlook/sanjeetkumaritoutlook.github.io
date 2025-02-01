@@ -12,7 +12,7 @@ describe('app-profile-page', () => {
   it.skip('displays the specified name', async () => {
     const page = await newE2EPage({ url: '/profile/joseph' });
 
-    const profileElement = await page.find('app-root >>> app-profile-page');
+    const profileElement = await page.find('app-root-portfolio >>> app-profile-page');
     const element = profileElement.shadowRoot.querySelector('div');
     expect(element.textContent).toContain('Hello! My name is Joseph.');
   });

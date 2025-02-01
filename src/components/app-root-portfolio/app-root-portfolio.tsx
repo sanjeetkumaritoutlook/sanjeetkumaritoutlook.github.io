@@ -5,8 +5,8 @@ import { Router } from "../../";  //in index.ts its already there so no need to 
 import { Route, match } from "stencil-router-v2";
 //https://www.npmjs.com/package/stencil-router-v2
 @Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.css',
+  tag: 'app-root-portfolio',
+  styleUrl: 'app-root-portfolio.css',
   shadow: true,
 })
 export class AppRoot {

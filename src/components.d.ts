@@ -25,7 +25,7 @@ export namespace Components {
          */
         "width": string;
     }
-    interface AppRoot {
+    interface AppRootPortfolio {
     }
     interface FeedbackForm {
         "disableQuickbars": boolean;
@@ -68,11 +68,11 @@ declare global {
         prototype: HTMLAppProfilePageElement;
         new (): HTMLAppProfilePageElement;
     };
-    interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
+    interface HTMLAppRootPortfolioElement extends Components.AppRootPortfolio, HTMLStencilElement {
     }
-    var HTMLAppRootElement: {
-        prototype: HTMLAppRootElement;
-        new (): HTMLAppRootElement;
+    var HTMLAppRootPortfolioElement: {
+        prototype: HTMLAppRootPortfolioElement;
+        new (): HTMLAppRootPortfolioElement;
     };
     interface HTMLFeedbackFormElementEventMap {
         "valueChange": string;
@@ -116,7 +116,7 @@ declare global {
         "about-us": HTMLAboutUsElement;
         "app-home-page": HTMLAppHomePageElement;
         "app-profile-page": HTMLAppProfilePageElement;
-        "app-root": HTMLAppRootElement;
+        "app-root-portfolio": HTMLAppRootPortfolioElement;
         "feedback-form": HTMLFeedbackFormElement;
         "header-navigation": HTMLHeaderNavigationElement;
         "posts-dashboard": HTMLPostsDashboardElement;
@@ -143,7 +143,7 @@ declare namespace LocalJSX {
          */
         "width"?: string;
     }
-    interface AppRoot {
+    interface AppRootPortfolio {
     }
     interface FeedbackForm {
         "disableQuickbars"?: boolean;
@@ -170,7 +170,7 @@ declare namespace LocalJSX {
         "about-us": AboutUs;
         "app-home-page": AppHomePage;
         "app-profile-page": AppProfilePage;
-        "app-root": AppRoot;
+        "app-root-portfolio": AppRootPortfolio;
         "feedback-form": FeedbackForm;
         "header-navigation": HeaderNavigation;
         "posts-dashboard": PostsDashboard;
@@ -184,7 +184,7 @@ declare module "@stencil/core" {
             "about-us": LocalJSX.AboutUs & JSXBase.HTMLAttributes<HTMLAboutUsElement>;
             "app-home-page": LocalJSX.AppHomePage & JSXBase.HTMLAttributes<HTMLAppHomePageElement>;
             "app-profile-page": LocalJSX.AppProfilePage & JSXBase.HTMLAttributes<HTMLAppProfilePageElement>;
-            "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "app-root-portfolio": LocalJSX.AppRootPortfolio & JSXBase.HTMLAttributes<HTMLAppRootPortfolioElement>;
             "feedback-form": LocalJSX.FeedbackForm & JSXBase.HTMLAttributes<HTMLFeedbackFormElement>;
             "header-navigation": LocalJSX.HeaderNavigation & JSXBase.HTMLAttributes<HTMLHeaderNavigationElement>;
             "posts-dashboard": LocalJSX.PostsDashboard & JSXBase.HTMLAttributes<HTMLPostsDashboardElement>;

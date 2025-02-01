@@ -29,7 +29,7 @@ export class WebComponents {
       <div>
         <p>Below components in this page are rendering from <a href="https://www.npmjs.com/package/stenciljs-components" target="_blank"><strong>stenciljs-components npm package</strong></a></p>
         <p>Sandbox page of this component library:<a href="https://sanjeetkumaritoutlook.github.io/stenciljs-components/" target="_blank">Visit</a></p>
-        <p>By Default,Stencil Web app creates three components:app-root, app-home, app-profile with Routung from "stencil-router-v2" pre-installed </p>
+        <p>By Default,Stencil Web app creates three components:app-root-portfolio, app-home, app-profile with Routung from "stencil-router-v2" pre-installed </p>
          <p>To avoid conflict with npm package (stenciljs-components) which has similar naming components, renamed the component in this web app to app-home-page and app-profile-page respectively</p>
         <json-schema-form schema= {formSchema}></json-schema-form>     
       </div>

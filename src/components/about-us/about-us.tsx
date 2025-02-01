@@ -14,7 +14,7 @@ export class AboutUs {
     return (
       <div>
          <div>
-          <p>by Default,Stencil Web app creates three components:app-root, app-home, app-profile with Routung from "stencil-router-v2" pre-installed </p>
+          <p>by Default,Stencil Web app creates three components:app-root-portfolio, app-home, app-profile with Routung from "stencil-router-v2" pre-installed </p>
          <p>To avoid conflict with npm package (stenciljs-components) which has similar naming components, renamed the component in this web app to app-home-page and app-profile-page respectively</p>
           <h1>Steps to create Stencil Web App</h1>
           <h1>Start by npm init stencil and then choose 2nd option</h1>
