@@ -1,5 +1,9 @@
 import { Component, Prop, h } from '@stencil/core';
 //renamed tag to avoid conflict with html custom element of npm package
+//https://www.freelancer.com/
+//npm i freelancer-web-app
+//https://codepen.io/JackEdwardLyons/pen/azoxoQa
+//https://www.freelancer.com/u/HawkGeek
 @Component({
   tag: 'app-profile-page',
   styleUrl: 'app-profile-page.css',
@@ -201,6 +205,17 @@ export class AppProfile {
           <td>AngularJS 1</td>
           </tr>
           </table>
+          <freelancer-score
+        bgColor="#7FDBFF"
+        type="card"
+        username="sanjeetkumarit"
+      ></freelancer-score>
+
+      <freelancer-score
+        bgColor="#345589"
+        type="minimal"
+        username="sanjeetkumarit"
+      ></freelancer-score>
         </div>
       );
     }
