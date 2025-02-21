@@ -63,7 +63,7 @@ export class AppProfile {
           <tr>
             <td>stenciljs-components</td>
             <td><a href="https://www.npmjs.com/package/stenciljs-components" target="_blank">Visit</a></td>
-            <td>2.0.1</td>
+            <td>2.0.4</td>
           </tr>
           <tr>
             <td>FLUID Library</td>
@@ -174,7 +174,12 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/nextjs-app/" target="_blank">Visit</a></td>
           <td>Next 15.1.1 with React 19</td>
           </tr>
-          {/* <tr>
+          <tr>
+          <td>react19-cra</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/react19-cra/" target="_blank">Visit</a></td>
+          <td>React 19</td>
+          </tr>
+          <tr>
           <td>angular-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
@@ -183,7 +188,7 @@ export class AppProfile {
           <td>react-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
           <td>React 18.2</td>
-          </tr> */}
+          </tr>
            <tr>
           <td>new-react-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/new-react-app/" target="_blank">Visit</a></td>
