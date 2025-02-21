@@ -449,7 +449,8 @@ export class FeedbackForm {
        <fluid-file-upload
        uploadControlConfig="uploadControlConfig"
        fileListUpdated="fileListUpdated($event)"
-       uploadClicked="uploadClicked($event)">
+       uploadClicked="uploadClicked($event)"
+       showFileList="false">
        </fluid-file-upload>
       <button onClick={() => this.getContentFromEditor()}>Submit</button>
       <button onClick={() => this.setContentInEditor('')}>Clear Content</button>
