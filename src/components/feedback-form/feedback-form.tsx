@@ -67,6 +67,8 @@ export class FeedbackForm {
   @Prop({ mutable: true }) placeholder: string;
   @Prop() fontFamily: string = 'Calibri'; // Default font family doesnt work when initialvalue has font
   @Prop() fontSize: string; // Default font size prop
+  @State() uploadedFile: File | null = null;
+
   @Element() el: HTMLElement;
 
   @Event() valueChange: EventEmitter<string>;
@@ -83,9 +85,13 @@ export class FeedbackForm {
     },
   };
 //https://fluid.libertymutual.com/fluid/fluid-file-upload.html
-  fileListUpdated(event) {
-    console.log(event.detail);
+fileListUpdated(event: CustomEvent) {
+  console.log('uploaded file'+event.detail);
+  const files = event.detail;
+  if (files && files.length > 0) {
+    this.uploadedFile = files[0]; // Store the first uploaded file
   }
+}
 //https://fluid-components.libertymutual.com/fluid/fluid-file-upload.html
   uploadClicked(event) {
     console.log(event.detail);
@@ -317,7 +323,7 @@ export class FeedbackForm {
   }
    //Before performing any operations- GET or SET- ensure that the this.editor instance is available
   //send email also without backend
-   async getContentFromEditor() {
+   async sendEmail() {
      if (this.editor) {
        // Access properties or methods of the TinyMCE editor instance
        this.editorContent = this.editor.getContent();
@@ -348,6 +354,16 @@ export class FeedbackForm {
       alert('Please fill out first 3 fields before submitting.');
       return;
     }
+    if (!this.uploadedFile) {
+      console.error("No file uploaded.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', this.uploadedFile);
+    formData.append('name', this.userName);
+    formData.append('email', this.userEmail);
+    formData.append('message', this.editorContent);
        // Call EmailJS to send the email (Browser based or client based)
        //Emailjs dashboard: https://dashboard.emailjs.com/sign-up
        //templateParams is this.editorContent
@@ -357,7 +373,8 @@ export class FeedbackForm {
       'template_szeawas', // Template ID from EmailJS dashboard
       { user_name: this.userName,
         user_email: this.userEmail,
-        content: this.editorContent }, // Template parameters (the content of the email)
+        content: this.editorContent,
+        file: this.uploadedFile }, // Template parameters (the content of the email)
       {
         publicKey: 'IRGsyXDXq7ZJHMbzF',
       }// Your user ID from EmailJS: YOUR_PUBLIC_KEY
@@ -447,12 +464,11 @@ export class FeedbackForm {
        aria-placeholder={this.placeholder}></div>
        </label>
        <fluid-file-upload
-       uploadControlConfig="uploadControlConfig"
-       fileListUpdated="fileListUpdated($event)"
+       onFileListUpdated={(event) => this.fileListUpdated(event)}
        uploadClicked="uploadClicked($event)"
        showFileList="false">
        </fluid-file-upload>
-      <button onClick={() => this.getContentFromEditor()}>Submit</button>
+      <button onClick={() => this.sendEmail()}>Submit</button>
       <button onClick={() => this.setContentInEditor('')}>Clear Content</button>
     </div>
     );
