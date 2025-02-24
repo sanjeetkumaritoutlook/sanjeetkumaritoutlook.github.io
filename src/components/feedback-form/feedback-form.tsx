@@ -323,95 +323,71 @@ fileListUpdated(event: CustomEvent) {
   }
    //Before performing any operations- GET or SET- ensure that the this.editor instance is available
   //send email also without backend
-   async sendEmail() {
-     if (this.editor) {
-       // Access properties or methods of the TinyMCE editor instance
-       this.editorContent = this.editor.getContent();
-       console.log('Content from TinyMCE editor:', this.editorContent);
-       try {
-        const response = await fetch('https://reqres.in/api/users', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({  name: this.userName,email:this.userEmail,file:this.fileUploaded,content: this.editorContent }),
-        });
+  async sendEmail() {
+    if (this.editor) {
+      this.editorContent = this.editor.getContent().trim(); // Trim to remove extra spaces
+      console.log('Editor Content:', this.editorContent);
+    } else {
+      console.error('TinyMCE editor instance not available.');
+      return;
+    }
   
-        if (!response.ok) {
-          throw new Error('Failed to submit content');
-        }
+    // Debugging logs
+    console.log('User Name:', this.userName);
+    console.log('User Email:', this.userEmail);
+    console.log('Editor Content:', this.editorContent);
+    console.log('Uploaded File:', this.uploadedFile);
   
-        const result = await response.json();
-        this.responseMessage = 'Content submitted successfully!';
-        console.log('Response:', result);
-      } catch (error) {
-        console.error('Error:', error);
-        this.responseMessage = 'Submission failed!';
+    // Ensure required fields are filled
+    if (!this.userName?.trim() || !this.userEmail?.trim() || !this.editorContent?.trim()) {
+      alert('Please fill out the first 3 fields before submitting.');
+      return;
+    }
+  
+    try {
+      let base64File = null;
+      let filename = null;
+  
+      // Convert file to Base64 only if a file is uploaded
+      if (this.uploadedFile) {
+        base64File = await this.convertFileToBase64(this.uploadedFile);
+        filename = this.uploadedFile.name;
       }
-
-       // Ensure all required fields are filled
-    if (!this.userName || !this.userEmail || !this.editorContent) {
-      alert('Please fill out first 3 fields before submitting.');
-      return;
-    }
-    if (!this.uploadedFile) {
-      console.error("No file uploaded.");
-      return;
-    }
-
-    const formData = new FormData();
-    formData.append('file', this.uploadedFile);
-    formData.append('name', this.userName);
-    formData.append('email', this.userEmail);
-    formData.append('message', this.editorContent);
-       // Call EmailJS to send the email (Browser based or client based)
-       //Emailjs dashboard: https://dashboard.emailjs.com/sign-up
-       //templateParams is this.editorContent
-       //Template ID not found: https://dashboard.emailjs.com/admin/templates
-    emailjs.send(
-      'service_2q5gm3h', // Email service ID from EmailJS dashboard
-      'template_szeawas', // Template ID from EmailJS dashboard
-      { user_name: this.userName,
-        user_email: this.userEmail,
-        content: this.editorContent,
-        file: this.uploadedFile }, // Template parameters (the content of the email)
-      {
-        publicKey: 'IRGsyXDXq7ZJHMbzF',
-      }// Your user ID from EmailJS: YOUR_PUBLIC_KEY
-    )
-    .then((response) => {
-      console.log('Email sent successfully',  response.status, response.text);
-      alert('Email sent successfully!');
-   
-      // Sending auto-reply email
-      emailjs
-      .send(
-        'service_2q5gm3h', // Your EmailJS service ID
-        'template_57gcu0o', // Auto-reply template ID
+  
+      const emailResponse = await emailjs.send(
+        'service_2q5gm3h',
+        'template_szeawas',
         {
-          user_name: this.userName,
-          user_email: this.userEmail,
+          user_name: this.userName.trim(),
+          user_email: this.userEmail.trim(),
+          content: this.editorContent.trim(),
+          attachment: base64File, // Will be null if no file is uploaded
+          filename: filename, // Will be null if no file is uploaded
         },
-        'IRGsyXDXq7ZJHMbzF' // Your EmailJS user ID
-      )
-      .then((response) => {
-        console.log('Auto-reply email sent successfully', response);
-        alert('Feedback sent, and an auto-reply email was sent to the user!');
-      })
-      .catch((error) => {
-        console.error('Error sending auto-reply email', error);
-      });
-
-    })  //this is first feedback then endinng parantheses, auto-reply is placed inside this  above
-    .catch((error) => {
+        { publicKey: 'IRGsyXDXq7ZJHMbzF' }
+      );
+  
+      console.log('Email sent successfully', emailResponse.status, emailResponse.text);
+      alert('Email sent successfully!');
+    } catch (error) {
       console.error('Error sending email', error);
       alert('Failed to send email');
+    }
+  }
+  
+  
+  /**
+   * Converts a File to Base64 format for EmailJS
+   */
+  convertFileToBase64(file: File): Promise<string> {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = (error) => reject(error);
     });
-     } else {
-       console.error('TinyMCE editor instance not available.');
-       return null;
-     }
-   }
+  }
+  
  
    setContentInEditor(newContent: string) {
      if (this.editor) {
