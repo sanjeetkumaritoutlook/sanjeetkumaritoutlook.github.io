@@ -63,7 +63,7 @@ export class AppProfile {
           <tr>
             <td>stenciljs-components</td>
             <td><a href="https://www.npmjs.com/package/stenciljs-components" target="_blank">Visit</a></td>
-            <td>2.0.4</td>
+            <td>2.0.6</td>
           </tr>
           <tr>
             <td>FLUID Library</td>
@@ -203,6 +203,16 @@ export class AppProfile {
           <td>angular-project</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-project" target="_blank">Visit</a></td>
           <td>Angular 16</td>
+          </tr>
+          <tr>
+          <td>angular-testing</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-testing/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
+          <tr>
+          <td>angular-boilerplate</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-boilerplate" target="_blank">Visit</a></td>
+          <td>Angular 11</td>
           </tr>
           <tr>
           <td>angularjs1-app</td>
