@@ -215,6 +215,12 @@ export class AppProfile {
           <td>Angular 11</td>
           </tr>
           <tr>
+		  <tr>
+          <td>standalone (Auth0 by okta)</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/standalone/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
+          <tr>
           <td>angularjs1-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angularjs1-app/" target="_blank">Visit</a></td>
           <td>AngularJS 1</td>
