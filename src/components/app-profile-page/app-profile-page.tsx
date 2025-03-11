@@ -224,6 +224,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/angularjs1-app/" target="_blank">Visit</a></td>
           <td>AngularJS 1</td>
           </tr>
+          <tr>
+          <td>web-components</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/web-components/" target="_blank">Visit</a></td>
+          <td>Angular 9</td>
+          </tr>
           </table>
           <freelancer-score
         bgColor="#7FDBFF"
