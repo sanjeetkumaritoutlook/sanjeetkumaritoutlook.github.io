@@ -210,6 +210,11 @@ export class AppProfile {
           <td>Angular 17</td>
           </tr>
           <tr>
+          <td>angular-e2e-playwright</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-e2e-playwright/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
+          <tr>
           <td>angular-boilerplate</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-boilerplate" target="_blank">Visit</a></td>
           <td>Angular 11</td>
