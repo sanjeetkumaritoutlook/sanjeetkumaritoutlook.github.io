@@ -220,6 +220,11 @@ export class AppProfile {
           <td>Angular 17</td>
           </tr>
           <tr>
+          <td>storybook-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/storybook-app" target="_blank">Visit</a></td>
+          <td>Storybook 8.6 in Angular 19</td>
+          </tr>
+          <tr>
           <td>angular-boilerplate</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-boilerplate" target="_blank">Visit</a></td>
           <td>Angular 11</td>
