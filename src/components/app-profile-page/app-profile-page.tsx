@@ -105,7 +105,7 @@ export class AppProfile {
           <td>Angular 19</td>
           </tr>
           <tr>
-          <td>e-commerce-react</td>
+          <td>e-commerce-react (with JS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-react/" target="_blank">Visit</a></td>
           <td>React 18</td>
           </tr>
@@ -135,12 +135,12 @@ export class AppProfile {
           <td>Ionic Angular 17</td>
           </tr>
           <tr>
-          <td>react-native-expo</td>
+          <td>reactive-native-expo (with TS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/reactive-native-expo/" target="_blank">Visit</a></td>
           <td>Expo for Web (React Native for web)</td>
           </tr>
           <tr>
-          <td>react-tinymce-form</td>
+          <td>react-tinymce-form (with TS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-tinymce-form/" target="_blank">Visit</a></td>
           <td>React 18.3</td>
           </tr>
@@ -170,12 +170,12 @@ export class AppProfile {
           <td>Angular 12</td>
           </tr>
           <tr>
-          <td>nextjs-app</td>
+          <td>nextjs-app (with TS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/nextjs-app/" target="_blank">Visit</a></td>
           <td>Next 15.1.1 with React 19</td>
           </tr>
           <tr>
-          <td>react19-cra</td>
+          <td>react19-cra (with TS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react19-cra/" target="_blank">Visit</a></td>
           <td>React 19</td>
           </tr>
@@ -185,12 +185,12 @@ export class AppProfile {
           <td>Angular 12</td>
           </tr>
           <tr>
-          <td>react-local-stenciljs</td>
+          <td>react-local-stenciljs (with TS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
           <td>React 18.2</td>
           </tr> */}
            <tr>
-          <td>new-react-app</td>
+          <td>new-react-app (with JS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/new-react-app/" target="_blank">Visit</a></td>
           <td>React 18</td>
           </tr>
