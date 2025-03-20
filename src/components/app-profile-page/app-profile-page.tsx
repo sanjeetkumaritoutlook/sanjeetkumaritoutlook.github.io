@@ -70,6 +70,11 @@ export class AppProfile {
             <td><a href="https://www.npmjs.com/package/fluid-library" target="_blank">Visit</a></td>
             <td>1.0.5</td>
           </tr>
+          <tr>
+            <td>@my-scope/hello-package (Private Registry)</td>
+            <td><a href="https://github.com/sanjeetkumaritoutlook/npm-private" target="_blank">Visit</a></td>
+            <td>1.1.2</td>
+          </tr>
           </table>
          <p>External Certifications/NPM Profile:</p>
           <table>
@@ -210,8 +215,8 @@ export class AppProfile {
           <td>Angular 17</td>
           </tr>
           <tr>
-          <td>angular-e2e-playwright</td>
-           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-e2e-playwright/" target="_blank">Visit</a></td>
+          <td>angular-playwright-e2e</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-playwright-e2e/" target="_blank">Visit</a></td>
           <td>Angular 17</td>
           </tr>
           <tr>
