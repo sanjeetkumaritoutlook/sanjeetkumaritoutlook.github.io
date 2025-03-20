@@ -130,6 +130,11 @@ export class AppProfile {
           <td>Angular 16</td>
           </tr>
           <tr>
+          <td>Frontend portion(angular - nest - mongodb)</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-nest" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
+          <tr>
           <td>consuming-angular-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/consuming-angular-app/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
@@ -238,6 +243,11 @@ export class AppProfile {
           <td>ui-regression-suite</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular16/" target="_blank">Visit</a></td>
           <td>Angular 15</td>
+          </tr>
+          <tr>
+          <td>standalone server</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/standalone-server/" target="_blank">Visit</a></td>
+          <td>HTML</td>
           </tr>
           <tr>
           <td>standalone (Auth0 by okta)</td>
