@@ -16,6 +16,15 @@ export class AppHome {
           <a href="https://stenciljs.com" target="_blank">stenciljs.com</a> to get started.
         </p>
         <p><strong>Please Note:</strong> Currently, The routing to different pages is not working perfectly and you can navigate to each page, after clicking it from main Home page only. Direct URLs to each individual page is not working. </p>
+       
+        <table style={{ border: '1px solid black', borderSpacing: '0', padding: '8px' }}>
+          <tr>
+            <td>Main Portfolio site</td>
+            <td><a href="https://sanjeetkumarit.netlify.app/" target="_blank" rel="noopener noreferrer">Visit</a></td>
+          </tr>        
+          </table>
+
+
         <h1>Pages</h1>
         <button
           onClick={() => Router.push('/profile/sanjeet')}
