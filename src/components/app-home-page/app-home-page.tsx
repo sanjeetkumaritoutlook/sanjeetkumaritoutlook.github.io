@@ -17,7 +17,11 @@ export class AppHome {
         </p>
         <p><strong>Please Note:</strong> Currently, The routing to different pages is not working perfectly and you can navigate to each page, after clicking it from main Home page only. Direct URLs to each individual page is not working. </p>
        
-        <table style={{ border: '1px solid black', borderSpacing: '0', padding: '8px' }}>
+        <table>
+        <tr>
+        <th>Project</th>
+        <th>Link</th>
+        </tr>
           <tr>
             <td>Main Portfolio site</td>
             <td><a href="https://sanjeetkumarit.netlify.app/" target="_blank" rel="noopener noreferrer">Visit</a></td>
