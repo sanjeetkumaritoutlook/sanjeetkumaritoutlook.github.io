@@ -9,7 +9,7 @@ export class HeaderNavigation {
   render() {
     return (
       <header>
-        <h1>Sanjeet Kumar's Homepage</h1>
+        <h1>Sanjeet Kumar's Portfolio</h1>
     </header>
     );
   }
