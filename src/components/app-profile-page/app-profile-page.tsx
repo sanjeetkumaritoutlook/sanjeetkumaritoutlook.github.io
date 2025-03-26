@@ -142,7 +142,7 @@ export class AppProfile {
           <td>Angular 16</td>
           </tr>
           <tr>
-          <td>Frontend portion(angular - nest - mongodb)</td>
+          <td>Frontend portion(angular - nest - mongodb, using Jest)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-nest" target="_blank">Visit</a></td>
           <td>Angular 17</td>
           </tr>
