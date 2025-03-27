@@ -106,6 +106,8 @@ When using GitHub Pages with a private repository, the website generated can sti
 <br></br>
 Ensure that sensitive or confidential information is not included in the repository, as it could inadvertently become exposed through the GitHub Pages site.<br></br></p>
       <h1>GitHub Actions</h1>
+      <p>GitHub Actions was officially launched on November 13, 2019.</p>
+     <p>It was first announced in October 2018 at GitHub Universe as a way to automate workflows, but the full general availability (GA) release came a year later in 2019.</p>
       <p>GitHub Actions is required in scenario where entry file of a repository is not at root directory and the repository is of a framework like React, Angular, StencilJS</p>
       <p>GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.</p>
     <p>GitHub Actions goes beyond just DevOps and lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.</p>
