@@ -232,6 +232,11 @@ export class AppProfile {
           <td>Angular 17</td>
           </tr>
           <tr>
+          <td>angular-cdk</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-cdk/" target="_blank">Visit</a></td>
+          <td>Angular 19</td>
+          </tr>
+          <tr>
           <td>angular-playwright-e2e</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-playwright-e2e/" target="_blank">Visit</a></td>
           <td>Angular 17</td>
