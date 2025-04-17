@@ -66,6 +66,11 @@ export class AppProfile {
             <td>2.0.6</td>
           </tr>
           <tr>
+            <td>stencil-github-app</td>
+            <td><a href="https://www.npmjs.com/package/stencil-github-app" target="_blank">Visit</a></td>
+            <td>1.0.1</td>
+          </tr>
+          <tr>
             <td>FLUID Library</td>
             <td><a href="https://www.npmjs.com/package/fluid-library" target="_blank">Visit</a></td>
             <td>1.0.5</td>
@@ -282,6 +287,7 @@ export class AppProfile {
           <td>Angular 9</td>
           </tr>
           </table>
+          <github-repo-card owner="angular" repo="angular"></github-repo-card>
           <freelancer-score
         bgColor="#7FDBFF"
         type="card"
