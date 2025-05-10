@@ -202,7 +202,7 @@ export class AppProfile {
           <td>Next 15.1.1 with React 19</td>
           </tr>
           <tr>
-          <td>react19-cra (with TS)</td>
+          <td>react19-cra (with TS) - AI Chatbot</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react19-cra/" target="_blank">Visit</a></td>
           <td>React 19</td>
           </tr>
@@ -227,7 +227,7 @@ export class AppProfile {
           <td>Angular 16</td>
           </tr>
           <tr>
-          <td>angular-project</td>
+          <td>angular-project - AI Chatbot</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-project" target="_blank">Visit</a></td>
           <td>Angular 16</td>
           </tr>
