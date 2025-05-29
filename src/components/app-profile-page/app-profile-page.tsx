@@ -131,6 +131,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-react/" target="_blank">Visit</a></td>
           <td>React 18</td>
           </tr>
+           <tr>
+          <td>angular20-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular20-app/" target="_blank">Visit</a></td>
+          <td>Angular 20</td>
+          </tr>
           <tr>
           <td>angular19-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular19-app/" target="_blank">Visit</a></td>
@@ -206,7 +211,7 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/react19-cra/" target="_blank">Visit</a></td>
           <td>React 19</td>
           </tr>
-          {/* <tr>
+          <tr>
           <td>angular-local-stenciljs</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
@@ -215,7 +220,7 @@ export class AppProfile {
           <td>react-local-stenciljs (with TS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
           <td>React 18.2</td>
-          </tr> */}
+          </tr>
            <tr>
           <td>new-react-app (with JS)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/new-react-app/" target="_blank">Visit</a></td>
