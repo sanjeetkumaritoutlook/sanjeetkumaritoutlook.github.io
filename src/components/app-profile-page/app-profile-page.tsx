@@ -81,6 +81,27 @@ export class AppProfile {
             <td>1.1.2</td>
           </tr>
           </table>
+
+
+         <p>Created two python libraries:</p>
+                <table>
+          <tr>
+            <th>Python Library Name</th>
+            <th>URL</th>
+            <th>Version</th>
+          </tr>
+          <tr>
+            <td>iss-now-sanjeet</td>
+            <td><a href="https://pypi.org/project/iss-now-sanjeet/" target="_blank">Visit</a></td>
+            <td>1.0.0</td>
+          </tr>
+          <tr>
+            <td>iss-pass-tracker</td>
+            <td><a href="https://pypi.org/project/iss-pass-tracker/" target="_blank">Visit</a></td>
+            <td>1.0.1</td>
+          </tr>
+          </table>
+
          <p>External Certifications/Profile Pages:</p>
           <table>
           <tr>
@@ -106,6 +127,10 @@ export class AppProfile {
           <tr>
             <td>npm profile</td>
             <td><a href="https://www.npmjs.com/~sanjeetkumarit" target="_blank">Visit</a></td>
+          </tr>
+          <tr>
+            <td>python package index profile</td>
+            <td><a href="https://pypi.org/user/sanjeetkumarit/" target="_blank">Visit</a></td>
           </tr>
           </table>
 
