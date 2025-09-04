@@ -156,6 +156,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-react/" target="_blank">Visit</a></td>
           <td>React 18</td>
           </tr>
+            <tr>
+          <td>angular21-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular21-app/" target="_blank">Visit</a></td>
+          <td>Angular 21</td>
+          </tr>
            <tr>
           <td>angular20-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular20-app/" target="_blank">Visit</a></td>
