@@ -146,6 +146,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/stenciljs-components/" target="_blank">Visit</a></td>
           <td>StencilJS 4.7</td>
           </tr>
+            <tr>
+          <td>streamlit-dashboard</td>
+           <td><a href="https://analyticsenterpriseapp.streamlit.app/" target="_blank">Visit</a></td>
+          <td>Python 3.13.6</td>
+          </tr>
           <tr>
           <td>e-commerce-angular</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-angular/" target="_blank">Visit</a></td>
