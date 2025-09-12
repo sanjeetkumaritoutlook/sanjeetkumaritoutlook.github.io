@@ -177,19 +177,34 @@ export class AppProfile {
           <td>Angular 19</td>
           </tr>
           <tr>
+          <td>NgReact</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/NgReact/my-react-app/" target="_blank">Visit</a></td>
+          <td>Angular 7 in React 16</td>
+          </tr>
+          <tr>
+          <td>angular-micro-ui-in-react</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-micro-ui-in-react/shell-react-application/" target="_blank">Visit</a></td>
+          <td>Angular 16 in React 18</td>
+          </tr>
+          <tr>
           <td>angular16-app (Dashboard)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular16-app/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
+          </tr>
+           <tr>
+          <td>angular - nest - mongodb, using Jest</td>
+           <td><a href="https://angular-nest-1.onrender.com/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
           </tr>
           <tr>
           <td>Frontend portion(MEAN stack)</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/mean-stack-example/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
           </tr>
-          <tr>
-          <td>Frontend portion(angular - nest - mongodb, using Jest)</td>
-           <td><a href="https://angular-nest-1.onrender.com/" target="_blank">Visit</a></td>
-          <td>Angular 17</td>
+           <tr>
+          <td>angular12-app</td>
+           <td><a href="https://sanjeetkumaritoutlook.github.io/angular12-app/" target="_blank">Visit</a></td>
+          <td>Angular 12</td>
           </tr>
           <tr>
           <td>consuming-angular-app</td>
