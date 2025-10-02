@@ -212,6 +212,11 @@ export class AppProfile {
           <td>React 18 + GraphQL 16 + Apollo 3</td>
           </tr>
            <tr>
+          <td>angular-apollo-app</td>
+           <td><a href="https://angular-apollo-app-1.onrender.com/" target="_blank">Visit</a></td>
+          <td>Angular 17 + GraphQL 16 + Apollo 10</td>
+          </tr>
+           <tr>
           <td>angular12-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular12-app/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
