@@ -262,8 +262,8 @@ export class AppProfile {
           <td>Angular 12</td>
           </tr>
           <tr>
-          <td>nextjs-app (with TS)</td>
-           <td><a href="https://sanjeetkumaritoutlook.github.io/nextjs-app/" target="_blank">Visit</a></td>
+          <td>nextjs-app (with TS)- Chatbot</td>
+           <td><a href="https://nextjs-app-pearl-nu.vercel.app/nextjs-app" target="_blank">Visit</a></td>
           <td>Next 15.1.1 with React 19</td>
           </tr>
           <tr>
