@@ -161,6 +161,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/e-commerce-react/" target="_blank">Visit</a></td>
           <td>React 18</td>
           </tr>
+           <tr>
+          <td>my-vue-app</td>
+           <td><a href="https://my-vue-app-dun-ten.vercel.app/" target="_blank">Visit</a></td>
+          <td>Vue 3</td>
+          </tr>
             <tr>
           <td>angular21-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular21-app/" target="_blank">Visit</a></td>
@@ -197,9 +202,14 @@ export class AppProfile {
           <td>Angular 17</td>
           </tr>
           <tr>
-          <td>Frontend portion(MEAN stack)</td>
+          <td>Frontend(MEAN stack) client-server-database</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/mean-stack-example/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
+          </tr>
+           <tr>
+          <td>vite-react-app</td>
+           <td><a href="https://vite-react-app-ubnh.onrender.com/" target="_blank">Visit</a></td>
+          <td>React 18 + GraphQL 16 + Apollo 3</td>
           </tr>
            <tr>
           <td>angular12-app</td>
