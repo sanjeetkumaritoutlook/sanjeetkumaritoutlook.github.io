@@ -201,10 +201,20 @@ export class AppProfile {
            <td><a href="https://angular-nest-1.onrender.com/" target="_blank">Visit</a></td>
           <td>Angular 17</td>
           </tr>
+           <tr>
+          <td>Full stack app (client-server-database)</td>
+           <td><a href="https://angular-nest-mongodb.vercel.app/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
           <tr>
-          <td>Frontend(MEAN stack) client-server-database</td>
-           <td><a href="https://sanjeetkumaritoutlook.github.io/mean-stack-example/" target="_blank">Visit</a></td>
+          <td>MEAN stack (client-server-database)</td>
+           <td><a href="https://mean-stack-example-omega.vercel.app/" target="_blank">Visit</a></td>
           <td>Angular 16</td>
+          </tr>
+           <tr>
+          <td>Full stack app (json-server)</td>
+           <td><a href="https://angular-json-server-app.vercel.app/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
           </tr>
            <tr>
           <td>vite-react-app</td>
