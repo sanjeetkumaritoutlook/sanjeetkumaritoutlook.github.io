@@ -293,12 +293,12 @@ export class AppProfile {
           </tr>
           <tr>
           <td>angular-local-stenciljs</td>
-           <td><a href="https://sanjeetkumaritoutlook.github.io/angular-local-stenciljs/" target="_blank">Visit</a></td>
+           <td><a href="https://angular-local-stenciljs.vercel.app/" target="_blank">Visit</a></td>
           <td>Angular 12</td>
           </tr>
           <tr>
           <td>react-local-stenciljs (with TS)</td>
-           <td><a href="https://sanjeetkumaritoutlook.github.io/react-local-stenciljs/" target="_blank">Visit</a></td>
+           <td><a href="https://react-local-stenciljs.vercel.app/" target="_blank">Visit</a></td>
           <td>React 18.2</td>
           </tr>
            <tr>
