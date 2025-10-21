@@ -114,7 +114,7 @@ export class AppProfile {
           </tr>
           <tr>
             <td>Github profile</td>
-            <td><a href="https://github.com/sanjeetkumaritoutlook/" target="_blank">Visit</a></td>
+            <td><a href="https://github.com/sanjeetkumaritoutlook-user/" target="_blank">Visit</a></td>
           </tr>
           <tr>
             <td>stackoverflow profile</td>
