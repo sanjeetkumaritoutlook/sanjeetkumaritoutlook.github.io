@@ -256,6 +256,11 @@ export class AppProfile {
            <td><a href="https://sanjeetkumaritoutlook.github.io/react-tinymce-form/" target="_blank">Visit</a></td>
           <td>React 18.3</td>
           </tr>
+            <tr>
+          <td>firebase-todo</td>
+           <td><a href="https://fir-todo-sanjeet.web.app/" target="_blank">Visit</a></td>
+          <td>Angular 17 with Firebase</td>
+          </tr>
           <tr>
           <td>vanilla-ts</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/vanilla-ts/" target="_blank">Visit</a></td>
