@@ -231,6 +231,11 @@ export class AppProfile {
            <td><a href="https://angular-apollo-app-1.onrender.com/" target="_blank">Visit</a></td>
           <td>Angular 17 + GraphQL 16 + Apollo 10</td>
           </tr>
+          <tr>
+          <td>permission-demo</td>
+           <td><a href="https://permission-demo.vercel.app/" target="_blank">Visit</a></td>
+          <td>Angular 17</td>
+          </tr>
            <tr>
           <td>angular12-app</td>
            <td><a href="https://sanjeetkumaritoutlook.github.io/angular12-app/" target="_blank">Visit</a></td>
