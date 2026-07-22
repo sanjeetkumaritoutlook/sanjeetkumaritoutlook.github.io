@@ -49,3 +49,4 @@ npm run test.watch
 BFSI stands for Banking, Financial Services, and Insurance. 
 
 https://ewasion.github.io/opendirectory-finder/
+![Tyrannosaurus_rex_known_as_Gus](Tyrannosaurus_rex_known_as_Gus.gif)
