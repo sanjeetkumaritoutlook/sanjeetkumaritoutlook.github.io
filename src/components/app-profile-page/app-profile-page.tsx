@@ -132,6 +132,10 @@ export class AppProfile {
             <td>python package index profile</td>
             <td><a href="https://pypi.org/user/sanjeetkumarit/" target="_blank">Visit</a></td>
           </tr>
+		  <tr>
+            <td>HuggingFace profile</td>
+            <td><a href="https://huggingface.co/sanjeetkumarit" target="_blank">Visit</a></td>
+          </tr>
           </table>
 
           <p>My other Projects:</p>
